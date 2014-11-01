@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ form{margin:0;padding:0;}
+ html,body{height:100%;margin: 0;}
+ body{color:#333;font-size:18px;line-height:1.3;background-color:#fff;}
+ h1{font-size:2em;}
+ h2{font-size:1.6em;}
+ h3{font-size:1.2em;}
+ h4{font-size:1em;}
+ #wrap{
+ 	background:url(sky.png) repeat-x left 97px;
+ }
+ #wrap{
+ 	min-height:100%;
+ 	position:relative;
+ 	text-align: center;
+ 	overflow: hidden;
+
+ }
+ #header{
+ 	background:#2d3c40 url(top.gif) 0 bottom repeat-x;
+ 	border-bottom:1px solid #000;
+
+ }
+ #header .content{
+ 	width:100%;
+ 	height:97px;
+ 	margin:0 auto;
+ 	position:relative;
+ 	font-size: 45px;
+ 	color: greenyellow;
+ }
+ #footer{
+ 	height:20%;
+ 	width:100%;
+ 	position:absolute;
+ 	bottom:0;
+ 	background-color:#202628;
+
+ }
+ 
+ #content{
+ 	width:950px;
+ 	margin:30px auto 0;
+ 	padding-bottom:250px;
+ }
+
+ #content h1{
+ 	padding-top:12px;
+ 	margin-top:10px;
+ 	font-size:2.5em;
+ 	font-weight:normal;
+ 	letter-spacing:-1px;
+ 	padding-bottom:10px;
+ }
+
+ #wrap.home  #content h2{
+ 	font:bold 2.4em 'trebuchet ms',sans-serif;
+ 	color:#444;
+ 	margin-bottom:10px;
+ }

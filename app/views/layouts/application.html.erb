@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fyber Offers Search</title>
+	<link rel="favicon" href="favicon.ico">
+	<link rel="shortcut" href="favicon.ico">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body  class="sidebars">
+	<div id="wrap" class="home">
+		<div id="header">
+			<div class="content">
+				<div>Fyber Offers Search</div>
+			</div>
+		</div>
+		<div id="content" class="clearfix">
+			<%= render_flash_messages %>
+			<%= yield %>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>

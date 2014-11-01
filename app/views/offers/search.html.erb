@@ -1,0 +1,26 @@
+<%= form_for @offer , url: search_path(@offer), method: :search  do |f| %>
+<%=error_messages_for(@offer) %>
+
+<div class="actions">
+  <div class="actions_wrapper">
+   <div class="actions_el"><%= f.text_field :uid , class: "textarea" , placeholder: "Enter User Id" %></div>
+   <div class="actions_el"><%= f.text_field :pub0 , class: "textarea" , placeholder: "Enter Pub0" %></div>
+   <div class="actions_el"><%= f.select :page, ((1..10).map {|i| [i,i] }) , :include_blank => false , class: "select" ,:prompt => "Select Page" %></div>
+   <div class="actions_el"><%= f.submit "Go!" %> </div>
+   <div class="actions_el"><button name='clear' onclick="document.location.href='search';return false;">Clear</button></div>
+ </div>
+</div>
+
+<div class="results">
+  <% unless @offers.nil? %>
+  <%if @offers.blank?%>
+  <div class="no_offers"><h3>No offers</h3></div>
+  <%else%>
+  <h3>Offers found(<%=@offers.count%>):</h3>
+  <%@offers.each  do |offer| %>
+  <%= render :partial => "offers", :locals => { :offer => offer } %>
+  <%end%>
+  <%end%>
+  <% end %>
+</div>
+<% end %>

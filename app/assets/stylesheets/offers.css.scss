@@ -1,0 +1,39 @@
+.textarea{
+  border-radius: 6px;
+  border: 1;
+  height: 15px;
+}
+.actions {
+  text-align: center;
+  width: 100% !important;
+  float: left;
+}
+.actions_el{margin-left: 10px;float: left;}
+.actions_wrapper{
+  display: inline-block;
+}
+
+#flash_alert {
+  color: red;
+}
+
+.field_with_errors {
+  display: inline-table;
+}
+
+#error_explanation {
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: circle;
+  }
+}
